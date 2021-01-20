@@ -1,6 +1,7 @@
 package com.usagiwisata02
 
 import android.annotation.SuppressLint
+import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.*
@@ -9,14 +10,14 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ProgressBar
 
+class Profil : Fragment() {
 
-class Home : Fragment() {
 
     lateinit var webView: WebView
     lateinit var pb: ProgressBar
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.activity_home, null);
+        return inflater.inflate(R.layout.activity_profil, null);
 
     }
 
@@ -25,8 +26,8 @@ class Home : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        webView = view.findViewById(R.id.webViewHome)
-        pb = view.findViewById(R.id.pbHome)
+        webView = view.findViewById(R.id.webViewProfil)
+        pb = view.findViewById(R.id.pbProfil)
 
         webView.settings.javaScriptEnabled = true
         webView.settings.javaScriptCanOpenWindowsAutomatically = true;
@@ -40,14 +41,14 @@ class Home : Fragment() {
                 }
             }
         }
-        webView.loadUrl("https://komiku.id")
+        webView.loadUrl("https://web.facebook.com/danuamirudin/")
 
 
         webView.canGoBack()
         webView.setOnKeyListener(View.OnKeyListener { v, keyCode, event ->
             if (keyCode == KeyEvent.KEYCODE_BACK
-                && event.action == MotionEvent.ACTION_UP
-                && webView.canGoBack()){
+                    && event.action == MotionEvent.ACTION_UP
+                    && webView.canGoBack()){
                 webView.goBack()
                 return@OnKeyListener true
             }

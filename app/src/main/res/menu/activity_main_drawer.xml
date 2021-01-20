@@ -22,7 +22,7 @@
     <item android:title="Others">
         <menu>
             <item
-                android:id="@+id/person"
+                android:id="@+id/profil"
                 android:icon="@drawable/person"
                 android:title="@string/hello_from_me"/>
             <item

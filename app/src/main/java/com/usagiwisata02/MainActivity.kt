@@ -65,6 +65,11 @@
                  ft = fm.beginTransaction()
                  ft.replace(R.id.container, Streaming()).commit()
              }
+             R.id.profil -> {
+                 fm = supportFragmentManager
+                 ft = fm.beginTransaction()
+                 ft.replace(R.id.container, Profil()).commit()
+             }
          }
          drawer_layout.closeDrawer(GravityCompat.START)
          return true
