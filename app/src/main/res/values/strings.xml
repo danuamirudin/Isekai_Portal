@@ -7,7 +7,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Anime Forum</string>
+    <string name="menu_home">Baca Komik</string>
     <string name="menu_gallery">Anime Walpaper</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="hello_from_me">Hello from Me</string>
@@ -21,4 +21,5 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="anime_streaming">Otaku News</string>
 </resources>

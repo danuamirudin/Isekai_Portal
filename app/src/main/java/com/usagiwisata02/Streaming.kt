@@ -42,7 +42,7 @@ class Streaming : Fragment() {
                 }
             }
         }
-        webView.loadUrl("https://www.youtube.com/channel/UCxxnxya_32jcKj4yN1_kD7A")
+        webView.loadUrl("http://jurnalotaku.com/all/")
 
 
         webView.canGoBack()
